@@ -1,1 +1,1 @@
-web:nodemon ./bin/www
+web:nodemon app.js
