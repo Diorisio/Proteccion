@@ -18,7 +18,7 @@
     
     const sminutos=minutos.toString();
     serie.push(sminutos[0])
-    serie.push(sminutos[1])?serie.push(sminutos[1]):serie.push(0)
+    typeof sminutos[1]!='undefined'?serie.push(sminutos[1]):serie.push(0)
     
     for(let i=0;i<segundos;i++){
         serie.push(parseInt(serie[i])+parseInt(serie[i+1]))
