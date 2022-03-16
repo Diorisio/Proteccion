@@ -19,7 +19,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.listen('3001', () => console.log('Servidor corriendo en el puerto 3001'));
+app.listen(process.env.PORT||3000, ()=>{
+  console.log('Servidor funcionando en el puerto:3000');
+});
 
 
 module.exports = app;
